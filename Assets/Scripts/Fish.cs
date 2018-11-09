@@ -8,20 +8,25 @@ public class Fish : ScriptableObject {
 
     public new string name;
     public string description;
-    public float price;
+    public int avgAge;
     public int maxAge;
-    public float currentAge;
     public Sprite artwork;
     public float minPH;
     public float maxPH;
     public float minTemp;
     public float maxTemp;
+    public float avgSize;
     public float maxSize;
+    public FishType fishType;
+    public WaterType waterType;
+    public WaterRegion waterRegion;
+    public Difficulty difficulty;
     
     
 
-    enum FishType
+    public enum FishType
     {
+        none,
         Goldfish,
         Cichlid,
         Catfish,
@@ -36,18 +41,30 @@ public class Fish : ScriptableObject {
         Gobie
     }
 
-    enum WaterType
+    public enum WaterType
     {
+        none,
         Freshwater,
         Saltwater
     }
 
-    enum WaterRegion { 
+    public enum WaterRegion
+    {
+
+        none,
         Top,
         Middle,
         Buttom,
         All
+    }
 
+    public enum Difficulty
+    {
+        none,
+        Easy,
+        Medium,
+        Hard,
+        Expert
     }
     
 }
