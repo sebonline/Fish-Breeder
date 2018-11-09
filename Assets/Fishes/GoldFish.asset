@@ -26,3 +26,5 @@ MonoBehaviour:
   waterType: 1
   waterRegion: 4
   difficulty: 1
+  actions:
+  - {fileID: 11400000, guid: 516f347e7c2675b48ac4ddedd0563118, type: 2}

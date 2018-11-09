@@ -21,6 +21,7 @@ public class Fish : ScriptableObject {
     public WaterType waterType;
     public WaterRegion waterRegion;
     public Difficulty difficulty;
+    public Action[] actions;
     
     
 
