@@ -8,24 +8,35 @@ public class Fish : ScriptableObject {
 
     public new string name;
     public string description;
-    public int avgAge;
-    public int maxAge;
+    public float avgAge;
+    public float maxAge;
     public Sprite artwork;
-    public float minPH;
-    public float maxPH;
-    public float minTemp;
-    public float maxTemp;
+    
+    
     public float avgSize;
     public float maxSize;
-    public FishType fishType;
-    public WaterType waterType;
+    public float minWaterVolume;
+    public FishGenus Genus;
+    public FishSpecies Species;
+    
     public WaterRegion waterRegion;
     public Difficulty difficulty;
     public Action[] actions;
     
-    
 
-    public enum FishType
+    //Water Parameters
+    public float minPH;
+    public float maxPH;
+    public float minTemp;
+    public float maxTemp;
+    public WaterType waterType;
+
+    //Feeding Parameters
+    public Food[] food;
+    public float feedInterval;
+
+
+    public enum FishGenus
     {
         none,
         Goldfish,
@@ -41,17 +52,24 @@ public class Fish : ScriptableObject {
         Mandarinfish,
         Gobie
     }
+    public enum FishSpecies
+    {
+        none,
+        Mbuna,
+        Neon,
+
+    }
 
     public enum WaterType
     {
         none,
         Freshwater,
-        Saltwater
+        Saltwater,
+        Brackish
     }
 
     public enum WaterRegion
     {
-
         none,
         Top,
         Middle,
@@ -66,6 +84,31 @@ public class Fish : ScriptableObject {
         Medium,
         Hard,
         Expert
+    }
+
+    public enum Food
+    {
+        none,
+        DryFood,
+        Shrimps,
+        Fish,
+        Alge
+    }
+
+    public enum WaterCurrent
+    {
+        none,
+        Weak,
+        Medium,
+        Strong
+    }
+
+    public enum Lighting
+    {
+        none,
+        Little,
+        Medium,
+        Strong
     }
     
 }
