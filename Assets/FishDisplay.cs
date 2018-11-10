@@ -22,7 +22,7 @@ public class FishDisplay : MonoBehaviour {
     {
         nameText.text = fish.name;
         descriptionText.text = fish.description;
-        typeText.text ="Type: "+ fish.fishType.ToString();
+        typeText.text ="Type: "+ fish.Genus.ToString();
         waterTypeText.text = "Water Type: " + fish.waterType.ToString();
         waterRegionText.text = "Type: " + fish.waterType.ToString();
         difficultyText.text = "Difficulty: " + fish.difficulty.ToString();
