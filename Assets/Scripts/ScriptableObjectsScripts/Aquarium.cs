@@ -22,7 +22,8 @@ public class Aquarium : ScriptableObject
     public enum Silikon
     {
         Black,
-        White
+        White,
+        Clear
     }
 
 

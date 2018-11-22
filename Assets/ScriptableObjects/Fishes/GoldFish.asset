@@ -13,18 +13,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Normal Goldfish
   description: Just a fish
+  Genus: 1
+  Species: 1
+  difficulty: 2
   avgAge: 0
   maxAge: 3
   artwork: {fileID: 21300000, guid: d4ed378932d230747840a853584db6ec, type: 3}
+  avgSize: 6
+  maxSize: 10
+  waterRegion: 4
+  minWaterVolume: 0
   minPH: 6
   maxPH: 8
   minTemp: 8
   maxTemp: 25
-  avgSize: 6
-  maxSize: 10
-  fishType: 1
   waterType: 1
-  waterRegion: 4
-  difficulty: 1
+  food:
+  - {fileID: 11400000, guid: e0c387d445e281540a555503faaca667, type: 2}
+  feedInterval: 0
   actions:
   - {fileID: 11400000, guid: 516f347e7c2675b48ac4ddedd0563118, type: 2}

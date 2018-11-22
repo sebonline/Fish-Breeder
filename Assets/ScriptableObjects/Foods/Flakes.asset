@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed894e8003d67945be8a3d88d668dc5, type: 3}
   m_Name: Flakes
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  artwork: {fileID: 0}
-  energy: 0
+  name: Flakes
+  description: the most basic fish food you can find
+  artwork: {fileID: 21300000, guid: ee8d0b832ba5f0748865480cb096013d, type: 3}
+  energy: 2
   isSinking: 0

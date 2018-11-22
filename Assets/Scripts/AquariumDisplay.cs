@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Aquarium : MonoBehaviour
+public class AquariumDisplay : MonoBehaviour
 {
     public Aquarium aquarium;
 
@@ -22,10 +22,10 @@ public class Aquarium : MonoBehaviour
     {
         nameText.text = aquarium.name;
         descriptionText.text = aquarium.description;
-        heightText.text = aquarium.height.ToString();
-        widthText.text = aquarium.width.ToString();
-        lengthText.text = aquarium.lenght.ToString();
-        glassThicknessText.text = aquarium.glassThickness.ToString();
+        heightText.text = "height: " + aquarium.height.ToString() +" cm";
+        widthText.text = "width: " + aquarium.width.ToString() + " cm";
+        lengthText.text = "length: "+ aquarium.length.ToString() + " cm";
+        glassThicknessText.text = "Glass Thickness: " +aquarium.glassThickness.ToString() + " cm";
 
         if (aquarium.isClearGlass)
         {
@@ -35,13 +35,13 @@ public class Aquarium : MonoBehaviour
         {
             isClearGlassText.text = "This Aquarium uses Float Glass which will appear a little green";
         }
-        silikonText.text = aquarium.silikon.ToString();  
-        volumeText.text = CalcVolume(aquarium.height, aquarium.width, aquarium.length, aquarium.glassThickness).ToString();
+        silikonText.text = "Silicon: " + aquarium.silikon.ToString();  
+        volumeText.text = "Water Volume: " + CalcVolume(aquarium.height, aquarium.width, aquarium.length, aquarium.glassThickness).ToString("#.#") +" Liters";
     }
 
-    public float CalcVolume(float height, float width, float lenght, float glassThickness)
+    public float CalcVolume(float height, float width, float length, float glassThickness)
     {
-        float VolReturn = ((height - glassThickness) * (width - glassThickness) * (length - glassThickness));
+        float VolReturn = ((height - glassThickness) * (width - glassThickness) * (length - glassThickness))/1000f;
         return VolReturn;
     }
 

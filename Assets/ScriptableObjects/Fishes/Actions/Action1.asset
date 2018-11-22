@@ -8,11 +8,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ed894e8003d67945be8a3d88d668dc5, type: 3}
-  m_Name: Pallets
+  m_Script: {fileID: 11500000, guid: 285abf70bee7cae4f8be8502379ba61c, type: 3}
+  m_Name: Action1
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  artwork: {fileID: 0}
-  energy: 0
-  isSinking: 0
