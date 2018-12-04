@@ -16,7 +16,7 @@ MonoBehaviour:
   Genus: 1
   Species: 1
   difficulty: 2
-  avgAge: 0
+  avgAge: 2
   maxAge: 3
   artwork: {fileID: 21300000, guid: d4ed378932d230747840a853584db6ec, type: 3}
   avgSize: 6

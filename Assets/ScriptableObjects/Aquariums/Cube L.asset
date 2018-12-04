@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6fb9b45ca687b141aa8b3640424b025, type: 3}
   m_Name: Cube L
   m_EditorClassIdentifier: 
-  name: Cube M
+  name: Cube L
   description: Standard Aquarium
   height: 100
   width: 100
