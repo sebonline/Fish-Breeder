@@ -7,7 +7,7 @@ using System;
 
 public class FishDisplay : MonoBehaviour {
 
-    public Fish fish;
+    public FishObject fish;
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI descriptionText;
@@ -27,7 +27,7 @@ public class FishDisplay : MonoBehaviour {
     {
         nameText.text = fish.name;
         descriptionText.text = fish.description;
-        typeText.text ="Type: "+ fish.Genus.ToString();
+        typeText.text ="Type: "+ fish.genus.ToString();
         waterTypeText.text = "Water Type: " + fish.waterType.ToString();
         waterRegionText.text = "Type: " + fish.waterType.ToString();
         difficultyText.text = "Difficulty: " + fish.difficulty.ToString();

@@ -24,6 +24,7 @@ public class AquariumParameters : MonoBehaviour {
     public Gamemanager gamemanager;
 
     public Selectable selectedable;
+    public Fish[] fishes;
 
 
 

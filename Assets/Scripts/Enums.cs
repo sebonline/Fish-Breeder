@@ -2,40 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class Enums  {
 
-[CreateAssetMenu(fileName = "New Fish", menuName = "Fish")]
-public class Fish : ScriptableObject {
-    [Header("Basic Fish Information")]
-    public new string name;
-    public string description;
-    public FishGenus Genus;
-    public FishSpecies Species;
-    public Difficulty difficulty;
-    public float avgAge;
-    public float maxAge;
-    public Sprite artwork;
-
-    [Header("Aquarium Parameters")]
-    public float avgSize;
-    public float maxSize;
-    public WaterRegion waterRegion;
-    public float minWaterVolume;
-
-    [Header("Water Parameters")]
-    public float minPH;
-    public float maxPH;
-    public float minTemp;
-    public float maxTemp;
-    public WaterType waterType;
-
-    [Header("Feeding Parameters")]
-    public FishFood[] food;
-    public float feedInterval;
-
-    [Header("AI Behaviour")]
-    public Action[] actions;
-
-    //Enums
     public enum FishGenus
     {
         none,
@@ -85,7 +53,7 @@ public class Fish : ScriptableObject {
         Expert
     }
 
-    
+
 
     public enum WaterCurrent
     {
@@ -102,5 +70,7 @@ public class Fish : ScriptableObject {
         Medium,
         Strong
     }
-    
+
 }
+
+

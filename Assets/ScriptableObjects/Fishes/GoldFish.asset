@@ -11,25 +11,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fe3caedaa519c4f9ffb90944e32416, type: 3}
   m_Name: GoldFish
   m_EditorClassIdentifier: 
-  name: Normal Goldfish
-  description: Just a fish
-  Genus: 1
-  Species: 1
-  difficulty: 2
+  name: Goldie
+  description: Just a normal Fish
+  genus: 0
+  species: 0
+  difficulty: 1
   avgAge: 2
-  maxAge: 3
+  maxAge: 5
   artwork: {fileID: 21300000, guid: d4ed378932d230747840a853584db6ec, type: 3}
-  avgSize: 6
-  maxSize: 10
+  avgSize: 10
+  maxSize: 12
   waterRegion: 4
-  minWaterVolume: 0
+  minWaterVolume: 500
   minPH: 6
   maxPH: 8
-  minTemp: 8
+  minTemp: 10
   maxTemp: 25
   waterType: 1
   food:
+  - {fileID: 11400000, guid: 3d9d8689564f6614294283e4a99c88c7, type: 2}
+  - {fileID: 11400000, guid: f75f7879257174d4db38764de6f2ade9, type: 2}
   - {fileID: 11400000, guid: e0c387d445e281540a555503faaca667, type: 2}
-  feedInterval: 0
-  actions:
-  - {fileID: 11400000, guid: 516f347e7c2675b48ac4ddedd0563118, type: 2}
+  feedInterval: 2
+  actions: []
